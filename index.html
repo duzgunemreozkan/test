@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        background-color: aqua;
+        height: 100px;
+        align-items: center;
+        padding-left: 90px;
+        padding-right: 90px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+      }
+      .navmenu {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+      }
+      .banner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background-color: burlywood;
+        padding: 20px;
+      }
+      .porfolio {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+      }
+
+      .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        gap: 20px;
+        background-color: green;
+      }
+
+      .portfolioItems {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px;
+      }
+
+      .portfolioItemImg {
+        height: 350px;
+        width: 350px;
+      }
+
+      .porfolioPlus {
+        height: 350px;
+        width: 350px;
+        background-color: gray;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        font-size: 120px;
+        opacity: 0.8;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      .portfoliItem {
+        position: relative;
+      }
+      .portfoliItem:hover .porfolioPlus {
+        display: flex;
+      }
+      .aboutTitle {
+        font-size: 52px;
+        color: #fff;
+      }
+      .aboutBody {
+        display: flex;
+        padding-left: 120px;
+        padding-right: 120px;
+        gap: 20px;
+        height: 500px;
+        align-items: center;
+        font-size: 28px;
+        color: #fff;
+      }
+
+      .footer {
+        padding: 20px;
+        height: 120px;
+        background-color: black;
+        text-align: center;
+        padding-top: 80px;
+      }
+      .footerItems {
+        height: auto;
+        display: flex;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .footerItem {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        align-items: center;
+      }
+      .copyright {
+        display: flex;
+        height: 60px;
+        background-color: gray;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="logo">Start Bootstrap</div>
+      <nav class="nav">
+        <ul class="navmenu">
+          <li class="navItem"><a href="#portfolio">Portfolio</a></li>
+          <li class="navItem"><a href="#about">About</a></li>
+          <li class="navItem"><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="container">
+      <section class="banner">
+        <div class="avatar">
+          <img
+            height="500"
+            width="500"
+            src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg"
+            alt=""
+          />
+        </div>
+        <div class="headerTitle">START BOOTSTRAP</div>
+        <div class="headerTitle">Mahmut</div>
+      </section>
+      <section id="portfolio" class="porfolio">
+        <span>Porfolio</span>
+        <div class="portfolioItems">
+          <div class="portfoliItem">
+            <img
+              class="portfolioItemImg"
+              src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"
+              alt=""
+            />
+            <div class="porfolioPlus">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+          <div class="portfoliItem">
+            <img
+              class="portfolioItemImg"
+              src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"
+              alt=""
+            />
+            <div class="porfolioPlus">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+          <div class="portfoliItem">
+            <img
+              class="portfolioItemImg"
+              src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"
+              alt=""
+            />
+            <div class="porfolioPlus">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+        <div class="portfolioItems">
+          <div class="portfoliItem">
+            <img
+              class="portfolioItemImg"
+              src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"
+              alt=""
+            />
+            <div class="porfolioPlus">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+          <div class="portfoliItem">
+            <img
+              class="portfolioItemImg"
+              src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"
+              alt=""
+            />
+            <div class="porfolioPlus">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+          <div class="portfoliItem">
+            <img
+              class="portfolioItemImg"
+              src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png"
+              alt=""
+            />
+            <div class="porfolioPlus">
+              <i class="fa-solid fa-plus"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="about" class="about">
+        <div class="aboutTitle">ABOUT</div>
+        <div class="aboutBody">
+          <p>
+            Freelancer is a free bootstrap theme created by Start Bootstrap. The
+            download includes the complete source files including HTML, CSS, and
+            JavaScript as well as optional SASS stylesheets for easy
+            customization.
+          </p>
+          <p>
+            You can create your own custom avatar for the masthead, change the
+            icon in the dividers, and add your email address to the contact form
+            to make it fully functional!
+          </p>
+        </div>
+      </section>
+    </div>
+    <div id="contact" class="footer">
+      <div class="footerItems">
+        <div class="footerItem">
+          <span>LOCATION</span>
+          <span>2215 John Daniel Drive Clark, MO 65243</span>
+        </div>
+        <div class="footerItem">
+          <span>AROUND THE WEB </span>
+          <span>2215 John Daniel Drive Clark, MO 65243</span>
+        </div>
+        <div class="footerItem">
+          <span>AROUND THE WEB </span>
+          <span>2215 John Daniel Drive Clark, MO 65243</span>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      Copyright © Your Website 2022
+    </div>
+  </body>
+</html>
